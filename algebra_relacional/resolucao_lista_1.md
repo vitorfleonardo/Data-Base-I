@@ -1,4 +1,4 @@
-# 📝 Resolução dos Exercícios
+# 📝 Resolução dos Exercícios Lista 1
 
 ## Exercício 1
 
