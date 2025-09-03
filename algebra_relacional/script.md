@@ -79,3 +79,62 @@ IdAluno:number, IdCurso:number, Ano:number
 3, 102, 2024
 5, 101, 2024
 }
+
+# para lsita 3
+
+Cidade = {
+codCidade:number, nomeCidade:string
+1, Brasilia
+2, SaoPaulo
+3, RiodeJaneiro
+4, BeloHorizonte
+5, Salvador
+}
+
+Funcionario = {
+codFunc:number, nomeFunc:string, dataAdmissao:string, codCidade:number
+101, JoaoSilva, 2020-01-15, 1
+102, MariaSantos, 2019-05-20, 2
+103, PedroCosta, 2021-03-10, 1
+104, AnaOliveira, 2018-11-25, 3
+105, CarlosLima, 2022-02-18, 2
+}
+
+Carro = {
+codCarro:number, tipo:string, cor:string, codCidade:number
+201, SUV, Prata, 1
+202, Sedan, Preto, 2
+203, SUV, Branco, 1
+204, Hatch, Prata, 3
+205, SUV, Azul, 2
+206, SUV, Prata, 2
+207, Sedan, Vermelho, 1
+208, SUV, Preto, 1
+209, Hatch, Branco, 4
+210, SUV, Prata, 1
+}
+
+Cliente = {
+codCliente:number, nomeCliente:string, idade:number, codCidade:number
+301, RobertoMendes, 25, 1
+302, FernandaAlves, 19, 2
+303, LuisCarlos, 35, 1
+304, CarlaRocha, 28, 3
+305, BrunoTeixeira, 45, 2
+306, JulianaFerreira, 22, 1
+307, MarcosPereira, 31, 1
+308, PatriciaSilva, 18, 4
+309, AndreSouza, 40, 2
+310, BeatrizLima, 33, 1
+}
+
+Reserva = {
+codCarro:number, codCliente:number, codFunc:number, data:string
+201, 301, 101, 2025-08-15
+203, 303, 103, 2025-08-20
+205, 305, 102, 2025-08-22
+206, 304, 102, 2025-08-25
+208, 307, 101, 2025-08-28
+210, 309, 105, 2025-08-30
+202, 306, 103, 2025-09-01
+}

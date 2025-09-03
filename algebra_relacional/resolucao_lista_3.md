@@ -65,6 +65,7 @@ C = A ∪ B
 D = σ tipo = 'SUV' (Carro)
 E = C ⨝ D
 F = π codCarro (E)
+F
 ```
 
 ---
@@ -117,11 +118,16 @@ G
 
 ## Exercício 9
 
-Enunciado: <b> Liste o nome dos clientes de Brasília que nunca fizeram reserva </b>
+Enunciado: <b> Listar o nome de todos os funcionários e o código dos carros da cidade de
+Brasília que eles já registaram reservas, se houver. </b>
 
 ```
 A = σ nomeCidade = 'Brasilia' (Cidade)
-
+B = A ⨝ Carro ⨝ Reserva
+C = π codCarro, codFunc (B)
+D = Funcionario ⟕ C
+E = π nomeFunc,codCarro(D)
+E
 ```
 
 ---
@@ -132,14 +138,15 @@ Enunciado: <b> Procure pelo nome dos clientes que nunca efetuaram reserva de car
 da cor ‘prata’ </b>
 
 ```
-A = σ cor = 'prata' (Carro)
+A = σ cor = 'Prata' (Carro)
 B = A ⨝ Reserva /* Reservas de carro prata */
 C = π codCarro (B)
 D = π codCarro (Reserva)
 E = D - C /* Reservas de carro nao prata */
-F = E ⨝ Cliente
-G = π nomeCliente (F)
-G
+F = E ⨝ Reserva
+G = F ⨝ Cliente
+H = π nomeCliente (G)
+H
 ```
 
 ---
